@@ -47,9 +47,9 @@ a:hover {color:#0379C4}
   max-height:310px
 }
 .related-post-style-2 li {
-  padding:10px 10px 10px 0;
-  border-top:1px solid #eee;
-  overflow:hidden;
+padding: 10px 10px 10px 0;
+    float: left;
+    width: 30%;
 }
 .related-post-style-2 li:first-child {border-top:none}
 .related-post-style-2 .related-post-item-thumbnail {
@@ -103,7 +103,7 @@ function getQueryVariable(variable) {
 var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
-        numPosts: 6,
+        numPosts: 3,
         summaryLength: 100,
         widgetStyle: 2,
         callBack: function() {
