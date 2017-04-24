@@ -13,6 +13,9 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
  </script>
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700%7CMaterial+Icons' rel='stylesheet' type='text/css'/>
 <style>
+element.style {
+overflow: hidden;
+}
 body {
   background-color:white;
   margin:0;
@@ -48,6 +51,7 @@ a:hover {color:#f45435}
     width: 30.2%;
     margin-right: 24px;
     border: 1px solid #ddd;
+	height: 390px;
 }
 	
 .artext {padding-left:10px}
@@ -102,22 +106,13 @@ var labelArray = [],
     relatedPostConfig = {
 		homePage: getQueryVariable("url"),
         numPosts: 3,
-        summaryLength: 150,
+        summaryLength: 140,
         widgetStyle: 2,
         callBack: function() {
             var $container = $('#' + this.containerId + ' > ul'),
                 $list = $container.find('li'),
                 innerHeight = $list.first().height(),
                 outerHeight = $list.first().outerHeight(true);
-            // Container & list height setup
-            $container.css({
-                "height": outerHeight * $list.length / 2,
-                "overflow": "hidden"
-            });
-            $list.css({
-                "height": innerHeight,
-                "overflow": "hidden"
-            });
         }
     };
 </script>
