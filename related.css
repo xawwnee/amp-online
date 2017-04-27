@@ -1,0 +1,66 @@
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+    html{
+  font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  //overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body{margin:0;padding:0;overflow-x:hidden;}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v1/zO07Oxe3SOlw0l2YX2sdIfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v1/57TQ-anwthzkETEIO4jESPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+}
+    img{border:none;}
+    a{text-decoration: none;}
+  	#fw-container{width:100%;margin:0;padding:0;font-family: 'Poppins', sans-serif;font-weight:400;font-size:16px;border:none;overflow:hidden;box-sizing:border-box;text-align: left;}
+    header{margin:0;padding:0;background-color:#ffffff;background-image:none;font-size:16px;}
+    header .fw-feed-title{margin:0 20px;padding:20px 0 15px 0;word-wrap:break-word;border-bottom:none;}
+    header .fw-feed-title a:link{color:#555;}
+    header .fw-feed-title a:hover{color:#fe8500;}
+    header .fw-feed-title a:visited{color:#555;}
+	#fw-feed-items-scroll-area{background-color:#fff; background-image:none; width: 100%; overflow:hidden;}
+    
+    #fw-feed-items{margin:0;padding:0; overflow:hidden; z-index:-999;}
+    
+	#fw-feed-items .fw-feed-item{margin:0;padding:20px 0;clear:both;border-bottom: 1px solid #eee;}
+    #fw-feed-items .fw-feed-item:hover{margin:0;padding:20px 0;clear:both;opacity:0.7;}/***hover時に文字やイメージを透過***/
+    #fw-feed-items .fw-feed-item-url{display: block;overflow: hidden;}
+    
+      /**#fw-feed-items .fw-feed-multimediaplayer{width:100%;height:auto;}以下の二行をテスト。Youtubeプレーヤーをレスポンシブ対応**/
+     #fw-feed-items .fw-feed-multimediaplayer {position: relative;width: 100%;padding-top: 56.25%;}
+     #fw-feed-items .fw-feed-multimediaplayer iframe {position: absolute;top: 0;right: 0;width: 100% !important;height: 100% !important;}
+     
+    #fw-feed-items .fw-feed-item-image-module{margin:0 0 0 5px; padding:0;float:left;}
+	
+	
+	/**this line added by Divya**/
+    #fw-feed-items .fw-feed-item-image{margin:0; padding:0;width:110px;height:100px;overflow:hidden;}
+    #fw-feed-items .fw-feed-item-content-module{margin:0 0 0 5px;padding:0 0 0 15px;overflow:hidden;}
+    #fw-feed-items .fw-feed-item-title{margin:0 2px 5px 0;padding:0 2px 0 0;color:#555;line-height:1.5;font-size:18px;font-weight:600;overflow:hidden;display:block;}
+    #fw-feed-items .fw-feed-item-description{margin:0 2px 0 0;padding:0 2px 0 0;color:#555;word-wrap:break-word;line-height:1.5;font-size:14px;overflow: hidden;display: block;}
+    #fw-feed-items .fw-feed-item-date{margin:5px 0 0 0;padding:0;font-size:12px;;color:#555;overflow:hidden;text-overflow:ellipsis;display:block;}/***非表示の場合はdisplay:none***/
+    #fw-feed-items .fw-feed-item-link{margin:0;padding:0;font-size:12px;color:#555;overflow:hidden;text-overflow:ellipsis;display:block;}/***非表示の場合はdisplay:none***/
+@media screen and (max-width:414px){
+	#fw-feed-items .fw-feed-item-description, #fw-feed-items .fw-feed-item-date, #fw-feed-items .fw-feed-item-link {display:none}
+	#fw-feed-items .fw-feed-item-title {font-size:16px}
+}
